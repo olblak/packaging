@@ -39,6 +39,7 @@ createrepo --update -o "$RPM_WEBDIR" "$RPMDIR/"
 
 gpg \
   --batch \
+  --pinentry-mode loopback \
   --no-use-agent \
   --no-default-keyring \
   --keyring "$GPG_KEYRING" \

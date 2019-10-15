@@ -42,6 +42,7 @@ rm "$D/binary/Release.gpg" || true
 
 gpg \
   --batch \
+  --pinentry-mode loopback \
   --no-default-keyring \
   --digest-algo=sha256 \
   --keyring "$GPG_KEYRING" \
