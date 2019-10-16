@@ -43,7 +43,6 @@ gpg \
   --no-use-agent \
   --no-default-keyring \
   --keyring "$GPG_KEYRING" \
-  --secret-keyring="$GPG_SECRET_KEYRING" \
   --passphrase-file "$GPG_PASSPHRASE_FILE" \
   -a \
   --detach-sign \

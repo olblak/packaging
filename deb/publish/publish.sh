@@ -46,7 +46,6 @@ gpg \
   --no-default-keyring \
   --digest-algo=sha256 \
   --keyring "$GPG_KEYRING" \
-  --secret-keyring="$GPG_SECRET_KEYRING" \
   --passphrase-file "$GPG_PASSPHRASE_FILE" \
   -abs \
   -o "$D/binary/Release.gpg" \
