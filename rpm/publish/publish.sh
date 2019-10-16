@@ -40,13 +40,12 @@ createrepo --update -o "$RPM_WEBDIR" "$RPMDIR/"
 gpg \
   --batch \
   --pinentry-mode loopback \
-  --no-use-agent \
   --no-default-keyring \
   --keyring "$GPG_KEYRING" \
   --passphrase-file "$GPG_PASSPHRASE_FILE" \
   -a \
   --detach-sign \
   --yes \
-  "$SUSE_WEBDIR/repodata/repomd.xml"
+  "$RPM_WEBDIR/repodata/repomd.xml"
 
 rm -rf $D
