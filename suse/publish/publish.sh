@@ -34,7 +34,6 @@ createrepo --update -o "$SUSE_WEBDIR" "$SUSEDIR/"
 
 gpg \
   --batch \
-  --no-use-agent \
   --pinentry-mode loopback \
   --no-default-keyring \
   --keyring "$GPG_KEYRING" \
