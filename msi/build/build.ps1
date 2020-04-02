@@ -19,6 +19,9 @@ if([String]::IsNullOrWhiteSpace($War)) {
     exit 1
 }
 
+# dump the environment variables before the build
+Get-ChildItem env:
+
 $ErrorActionPreference = "Stop"
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
